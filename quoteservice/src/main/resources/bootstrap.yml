@@ -1,0 +1,11 @@
+spring:
+ application:
+   name: cloud-quote
+ cloud:
+   config:
+     enabled: true
+     uri: http://localhost:8888
+eureka:
+  instance:
+    metadataMap:
+      instanceId: cloud-quote-${random.int}
